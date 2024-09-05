@@ -24,7 +24,7 @@ typedef double tdoa_time_t; /* second */
 JNIEXPORT jint JNICALL Java_com_xlmf_feature_location_calculation_service_impl_CalServiceImpl_tdoaCalc
         (JNIEnv *env, jobject obj, jobjectArray bsVec, jdoubleArray timeVec, jint numBs, jobject ms);
 
-
+int tdoa_calc_1(tdoa_pos_t *bs_vec, tdoa_time_t *time_vec, int num_bs, tdoa_pos_t *ms);
 int tdoa_calc(tdoa_pos_t *bs_vec, tdoa_time_t *time_vec, int num_bs, JNIEnv *env, jobject ms);
 
 #ifdef __cplusplus
