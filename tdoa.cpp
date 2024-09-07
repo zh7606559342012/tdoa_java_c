@@ -10,6 +10,12 @@ JNIEXPORT jint
 JNICALL Java_com_xlmf_feature_location_calculation_service_impl_CalServiceImpl_tdoaCalc
         (JNIEnv *env, jobject obj, jobjectArray bsVec, jdoubleArray timeVec, jint numBs, jobject ms)
 {
+    FILE *logFile = fopen("/home/zhenghao/test_xlmf/zh_xlmf.log", "a");
+    if (logFile == NULL) {
+        fprintf(stderr, "Error opening log file!\n");
+        return -1;
+    }
+
     tdoa_pos_t *bs_array = (tdoa_pos_t *) malloc(numBs * sizeof(tdoa_pos_t));
     tdoa_time_t *time_array = (tdoa_time_t *) malloc(numBs * sizeof(tdoa_time_t));
 
@@ -44,6 +50,7 @@ JNICALL Java_com_xlmf_feature_location_calculation_service_impl_CalServiceImpl_t
     env->SetDoubleField(ms, fxField, tmp.x);
     env->SetDoubleField(ms, fyField, tmp.y);
     env->SetDoubleField(ms, fzField, tmp.z);
+    fprintf(logFile, "cal result is: tmp.x=%f, y=%f, z=%f\n", tmp.x, tmp.y, tmp.z);
 
     free(bs_array);
     free(time_array);
