@@ -1,0 +1,170 @@
+Build started at 2024-09-04T15:28:53.438912
+Main binary: /usr/bin/python3
+Build Options: -Dlibdir=lib -Dprefix=/opt/xlmf_tdoa
+Python system: Linux
+The Meson build system
+Version: 0.55.1
+Source dir: /root/mao/5g_tdoa
+Build dir: /root/mao/5g_tdoa/build
+Build type: native build
+Using 'PKG_CONFIG_PATH' from environment with value: '/opt/rh/devtoolset-9/root/usr/lib64/pkgconfig'
+Using 'PKG_CONFIG_PATH' from environment with value: '/opt/rh/devtoolset-9/root/usr/lib64/pkgconfig'
+Project name: xlmf_tdoa
+Project version: 1.0.0
+None of 'CC' are defined in the environment, not changing global flags.
+Using 'CFLAGS' from environment with value: '-g -O0 -I/opt/omscompile/jdk-11.0.19/include -I/opt/omscompile/jdk-11.0.19/include/linux'
+None of 'LDFLAGS' are defined in the environment, not changing global flags.
+None of 'CPPFLAGS' are defined in the environment, not changing global flags.
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Sanity testing C compiler: cc
+Is cross compiler: False.
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Sanity check compiler command line: cc /root/mao/5g_tdoa/build/meson-private/sanitycheckc.c -o /root/mao/5g_tdoa/build/meson-private/sanitycheckc.exe -g -O0 -I/opt/omscompile/jdk-11.0.19/include -I/opt/omscompile/jdk-11.0.19/include/linux -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /root/mao/5g_tdoa/build/meson-private/sanitycheckc.exe
+C compiler for the build machine: cc (gcc 9.3.1 "cc (GCC) 9.3.1 20200408 (Red Hat 9.3.1-2)")
+C linker for the build machine: cc ld.bfd 2.32-16
+None of 'AR' are defined in the environment, not changing global flags.
+None of 'CXX' are defined in the environment, not changing global flags.
+Using 'CXXFLAGS' from environment with value: '-g -O0 -I/opt/omscompile/jdk-11.0.19/include -I/opt/omscompile/jdk-11.0.19/include/linux'
+None of 'LDFLAGS' are defined in the environment, not changing global flags.
+None of 'CPPFLAGS' are defined in the environment, not changing global flags.
+None of 'CXX_LD' are defined in the environment, not changing global flags.
+Sanity testing C++ compiler: c++
+Is cross compiler: False.
+None of 'CXX_LD' are defined in the environment, not changing global flags.
+Sanity check compiler command line: c++ /root/mao/5g_tdoa/build/meson-private/sanitycheckcpp.cc -o /root/mao/5g_tdoa/build/meson-private/sanitycheckcpp.exe -g -O0 -I/opt/omscompile/jdk-11.0.19/include -I/opt/omscompile/jdk-11.0.19/include/linux -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /root/mao/5g_tdoa/build/meson-private/sanitycheckcpp.exe
+C++ compiler for the build machine: c++ (gcc 9.3.1 "c++ (GCC) 9.3.1 20200408 (Red Hat 9.3.1-2)")
+C++ linker for the build machine: c++ ld.bfd 2.32-16
+None of 'CC' are defined in the environment, not changing global flags.
+Using 'CFLAGS' from environment with value: '-g -O0 -I/opt/omscompile/jdk-11.0.19/include -I/opt/omscompile/jdk-11.0.19/include/linux'
+None of 'LDFLAGS' are defined in the environment, not changing global flags.
+None of 'CPPFLAGS' are defined in the environment, not changing global flags.
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Sanity testing C compiler: cc
+Is cross compiler: False.
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Sanity check compiler command line: cc /root/mao/5g_tdoa/build/meson-private/sanitycheckc.c -o /root/mao/5g_tdoa/build/meson-private/sanitycheckc.exe -g -O0 -I/opt/omscompile/jdk-11.0.19/include -I/opt/omscompile/jdk-11.0.19/include/linux -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /root/mao/5g_tdoa/build/meson-private/sanitycheckc.exe
+C compiler for the host machine: cc (gcc 9.3.1 "cc (GCC) 9.3.1 20200408 (Red Hat 9.3.1-2)")
+C linker for the host machine: cc ld.bfd 2.32-16
+None of 'AR' are defined in the environment, not changing global flags.
+None of 'CXX' are defined in the environment, not changing global flags.
+Using 'CXXFLAGS' from environment with value: '-g -O0 -I/opt/omscompile/jdk-11.0.19/include -I/opt/omscompile/jdk-11.0.19/include/linux'
+None of 'LDFLAGS' are defined in the environment, not changing global flags.
+None of 'CPPFLAGS' are defined in the environment, not changing global flags.
+None of 'CXX_LD' are defined in the environment, not changing global flags.
+Sanity testing C++ compiler: c++
+Is cross compiler: False.
+None of 'CXX_LD' are defined in the environment, not changing global flags.
+Sanity check compiler command line: c++ /root/mao/5g_tdoa/build/meson-private/sanitycheckcpp.cc -o /root/mao/5g_tdoa/build/meson-private/sanitycheckcpp.exe -g -O0 -I/opt/omscompile/jdk-11.0.19/include -I/opt/omscompile/jdk-11.0.19/include/linux -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /root/mao/5g_tdoa/build/meson-private/sanitycheckcpp.exe
+C++ compiler for the host machine: c++ (gcc 9.3.1 "c++ (GCC) 9.3.1 20200408 (Red Hat 9.3.1-2)")
+C++ linker for the host machine: c++ ld.bfd 2.32-16
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+WARNING: Project targeting '>= 0.43.0' but tried to use feature introduced in '0.49.0': / with string arguments.
+Pkg-config binary for MachineChoice.HOST is not cached.
+None of 'PKG_CONFIG' are defined in the environment, not changing global flags.
+Pkg-config binary missing from cross or native file, or env var undefined.
+Trying a default Pkg-config fallback at pkg-config
+Found pkg-config: /usr/bin/pkg-config (0.27.1)
+Determining dependency 'itpp' with pkg-config executable '/usr/bin/pkg-config'
+PKG_CONFIG_PATH: /opt/rh/devtoolset-9/root/usr/lib64/pkgconfig
+Called `/usr/bin/pkg-config --modversion itpp` -> 0
+4.3.1
+PKG_CONFIG_PATH: /opt/rh/devtoolset-9/root/usr/lib64/pkgconfig
+Called `/usr/bin/pkg-config --cflags itpp` -> 0
+-O3 -DNDEBUG -I/opt/xlmf_tdoa/include
+PKG_CONFIG_PATH: /opt/rh/devtoolset-9/root/usr/lib64/pkgconfig
+Called `/usr/bin/pkg-config itpp --libs` -> 0
+-L/opt/xlmf_tdoa/lib -litpp
+PKG_CONFIG_PATH: /opt/rh/devtoolset-9/root/usr/lib64/pkgconfig
+Called `/usr/bin/pkg-config itpp --libs` -> 0
+-L/opt/xlmf_tdoa/lib -litpp
+Using 'PKG_CONFIG_PATH' from environment with value: '/opt/rh/devtoolset-9/root/usr/lib64/pkgconfig'
+None of 'CXX_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /root/mao/5g_tdoa/build/meson-private/tmpp2807owq
+Command line:  c++ -I/opt/omscompile/jdk-11.0.19/include -I/opt/omscompile/jdk-11.0.19/include/linux /root/mao/5g_tdoa/build/meson-private/tmpp2807owq/testfile.cpp -o /root/mao/5g_tdoa/build/meson-private/tmpp2807owq/output.exe -pipe -g -O0 -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
+
+Code:
+ #include<stdio.h>
+        
+        int main(void) {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        };
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Program stdout:
+
+8
+
+Program stderr:
+
+
+Running compile:
+Working directory:  /root/mao/5g_tdoa/build/meson-private/tmpxawk6lzb
+Command line:  c++ -I/opt/omscompile/jdk-11.0.19/include -I/opt/omscompile/jdk-11.0.19/include/linux /root/mao/5g_tdoa/build/meson-private/tmpxawk6lzb/testfile.cpp -o /root/mao/5g_tdoa/build/meson-private/tmpxawk6lzb/output.obj -pipe -c -g -O0 -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /opt/rh/devtoolset-9/root/usr/lib/gcc/x86_64-redhat-linux/9/
+programs: =/opt/rh/devtoolset-9/root/usr/libexec/gcc/x86_64-redhat-linux/9/:/opt/rh/devtoolset-9/root/usr/libexec/gcc/x86_64-redhat-linux/9/:/opt/rh/devtoolset-9/root/usr/libexec/gcc/x86_64-redhat-linux/:/opt/rh/devtoolset-9/root/usr/lib/gcc/x86_64-redhat-linux/9/:/opt/rh/devtoolset-9/root/usr/lib/gcc/x86_64-redhat-linux/:/opt/rh/devtoolset-9/root/usr/lib/gcc/x86_64-redhat-linux/9/../../../../x86_64-redhat-linux/bin/x86_64-redhat-linux/9/:/opt/rh/devtoolset-9/root/usr/lib/gcc/x86_64-redhat-linux/9/../../../../x86_64-redhat-linux/bin/
+libraries: =/opt/rh/devtoolset-9/root/usr/lib/gcc/x86_64-redhat-linux/9/:/opt/rh/devtoolset-9/root/usr/lib/gcc/x86_64-redhat-linux/9/../../../../x86_64-redhat-linux/lib/x86_64-redhat-linux/9/:/opt/rh/devtoolset-9/root/usr/lib/gcc/x86_64-redhat-linux/9/../../../../x86_64-redhat-linux/lib/../lib64/:/opt/rh/devtoolset-9/root/usr/lib/gcc/x86_64-redhat-linux/9/../../../x86_64-redhat-linux/9/:/opt/rh/devtoolset-9/root/usr/lib/gcc/x86_64-redhat-linux/9/../../../../lib64/:/lib/x86_64-redhat-linux/9/:/lib/../lib64/:/usr/lib/x86_64-redhat-linux/9/:/usr/lib/../lib64/:/opt/rh/devtoolset-9/root/usr/lib/gcc/x86_64-redhat-linux/9/../../../../x86_64-redhat-linux/lib/:/opt/rh/devtoolset-9/root/usr/lib/gcc/x86_64-redhat-linux/9/../../../:/lib/:/usr/lib/
+
+Compiler stderr:
+ 
+Run-time dependency itpp found: YES 4.3.1
+Build targets in project: 1
+WARNING: Project specifies a minimum meson_version '>= 0.43.0' but uses features which were added in newer versions:
+ * 0.49.0: {'/ with string arguments'}
+
+Found ninja-1.10.2 at /usr/bin/ninja
+Running compile:
+Working directory:  /root/mao/5g_tdoa/build/meson-private/tmpqegg4zkw
+Command line:  cc -I/opt/omscompile/jdk-11.0.19/include -I/opt/omscompile/jdk-11.0.19/include/linux /root/mao/5g_tdoa/build/meson-private/tmpqegg4zkw/testfile.c -o /root/mao/5g_tdoa/build/meson-private/tmpqegg4zkw/output.obj -pipe -c -g -O0 -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /opt/rh/devtoolset-9/root/usr/lib/gcc/x86_64-redhat-linux/9/
+programs: =/opt/rh/devtoolset-9/root/usr/libexec/gcc/x86_64-redhat-linux/9/:/opt/rh/devtoolset-9/root/usr/libexec/gcc/x86_64-redhat-linux/9/:/opt/rh/devtoolset-9/root/usr/libexec/gcc/x86_64-redhat-linux/:/opt/rh/devtoolset-9/root/usr/lib/gcc/x86_64-redhat-linux/9/:/opt/rh/devtoolset-9/root/usr/lib/gcc/x86_64-redhat-linux/:/opt/rh/devtoolset-9/root/usr/lib/gcc/x86_64-redhat-linux/9/../../../../x86_64-redhat-linux/bin/x86_64-redhat-linux/9/:/opt/rh/devtoolset-9/root/usr/lib/gcc/x86_64-redhat-linux/9/../../../../x86_64-redhat-linux/bin/
+libraries: =/opt/rh/devtoolset-9/root/usr/lib/gcc/x86_64-redhat-linux/9/:/opt/rh/devtoolset-9/root/usr/lib/gcc/x86_64-redhat-linux/9/../../../../x86_64-redhat-linux/lib/x86_64-redhat-linux/9/:/opt/rh/devtoolset-9/root/usr/lib/gcc/x86_64-redhat-linux/9/../../../../x86_64-redhat-linux/lib/../lib64/:/opt/rh/devtoolset-9/root/usr/lib/gcc/x86_64-redhat-linux/9/../../../x86_64-redhat-linux/9/:/opt/rh/devtoolset-9/root/usr/lib/gcc/x86_64-redhat-linux/9/../../../../lib64/:/lib/x86_64-redhat-linux/9/:/lib/../lib64/:/usr/lib/x86_64-redhat-linux/9/:/usr/lib/../lib64/:/opt/rh/devtoolset-9/root/usr/lib/gcc/x86_64-redhat-linux/9/../../../../x86_64-redhat-linux/lib/:/opt/rh/devtoolset-9/root/usr/lib/gcc/x86_64-redhat-linux/9/../../../:/lib/:/usr/lib/
+
+Compiler stderr:
+ 
+None of 'STRIP' are defined in the environment, not changing global flags.
+None of 'STRIP' are defined in the environment, not changing global flags.

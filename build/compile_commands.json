@@ -1,0 +1,8 @@
+[
+  {
+    "directory": "/root/mao/5g_tdoa/build",
+    "command": "c++ -Ilibxlmf_tdoa.so.p -I. -I.. -I/opt/xlmf_tdoa/include -I/opt/omscompile/jdk-11.0.19/include -I/opt/omscompile/jdk-11.0.19/include/linux -fdiagnostics-color=always -pipe -D_FILE_OFFSET_BITS=64 -Wall -Winvalid-pch -Wnon-virtual-dtor -g -g -O0 -fPIC -O3 -DNDEBUG -MD -MQ libxlmf_tdoa.so.p/tdoa.cpp.o -MF libxlmf_tdoa.so.p/tdoa.cpp.o.d -o libxlmf_tdoa.so.p/tdoa.cpp.o -c ../tdoa.cpp",
+    "file": "../tdoa.cpp",
+    "output": "libxlmf_tdoa.so.p/tdoa.cpp.o"
+  }
+]

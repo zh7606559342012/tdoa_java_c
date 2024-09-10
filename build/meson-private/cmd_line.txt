@@ -1,0 +1,6 @@
+[options]
+libdir = lib
+prefix = /opt/xlmf_tdoa
+
+[properties]
+

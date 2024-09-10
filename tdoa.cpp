@@ -13,7 +13,7 @@ JNICALL Java_com_xlmf_feature_location_calculation_service_impl_CalServiceImpl_t
     FILE *logFile = fopen("/home/zhenghao/test_xlmf/zh_xlmf.log", "a");
     if (logFile == NULL) {
         fprintf(stderr, "Error opening log file!\n");
-        return -1;
+        return -1; // 返回错误
     }
 
     tdoa_pos_t *bs_array = (tdoa_pos_t *) malloc(numBs * sizeof(tdoa_pos_t));
