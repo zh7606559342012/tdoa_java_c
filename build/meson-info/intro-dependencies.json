@@ -1,1 +1,0 @@
-[{"name": "itpp", "version": "4.3.1", "compile_args": ["-O3", "-DNDEBUG", "-I/opt/xlmf_tdoa/include"], "link_args": ["/opt/xlmf_tdoa/lib/libitpp.so"]}]

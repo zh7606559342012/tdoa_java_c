@@ -1,9 +1,6 @@
-#include "tdoa.h"
+#include "javatoc.h"
 #include <jni.h>
-#include <itpp/itbase.h>
-#include <itpp/comm/multilateration.h>
-
-using namespace itpp;
+#include "tdoa.h"
 
 JNIEXPORT jint
 
@@ -38,13 +35,8 @@ JNICALL Java_com_xlmf_feature_location_calculation_service_impl_CalServiceImpl_t
     jfieldID fyField = env->GetFieldID(msClass, "y", "D");
     jfieldID fzField = env->GetFieldID(msClass, "z", "D");
 
-/*
-////////test pass
-    jint result = tdoa_calc(bs_array, time_array, numBs, env, ms);
-*/
-
     tdoa_pos_t tmp;
-    jint result = tdoa_calc_1(bs_array, time_array, numBs, &tmp);
+    jint result = VelPos::tdoa_calc_1(bs_array, time_array, numBs, &tmp);
 
 
     env->SetDoubleField(ms, fxField, tmp.x);
@@ -54,96 +46,7 @@ JNICALL Java_com_xlmf_feature_location_calculation_service_impl_CalServiceImpl_t
 
     free(bs_array);
     free(time_array);
+    fclose(logFile);
 
     return result;
-}
-int tdoa_calc_1(tdoa_pos_t *bs_vec, tdoa_time_t *time_vec, int num_bs, tdoa_pos_t *ms)
-{
-    int i, j;
-    bool ret;
-
-    if (num_bs < 4 || num_bs > 10) {
-        return -1;
-    }
-
-    Multilateration multi;
-    bvec method(num_bs - 1);
-    method.ones();
-
-    mat bs_pos(3, num_bs);
-    vec measures(num_bs);
-
-    for (i = 0; i < num_bs; i++) {
-        measures[i] = time_vec[i] * LIGHT_SPEED;
-        for (j = 0; j < 3; j++) {
-            bs_pos(i, j) = bs_vec[i].xyz[j];
-        }
-    }
-    multi.setup(method, bs_pos);
-
-    vec ms_pos;
-    ret = multi.get_pos(ms_pos, measures);
-    if (!ret) {
-        return -1;
-    }
-    ms->x = ms_pos.get(0);
-    ms->y = ms_pos.get(1);
-    ms->z = ms_pos.get(2);
-
-    return 0;
-}
-int tdoa_calc(tdoa_pos_t *bs_vec, tdoa_time_t *time_vec, int num_bs, JNIEnv *env, jobject ms)
-{
-/*
-    int i, j;
-    bool ret;
-
-    if (num_bs < 4 || num_bs > 10) {
-        return -1;
-    }
-
-    Multilateration multi;
-    bvec method(num_bs - 1);
-    method.ones();
-
-    mat bs_pos(3, num_bs);
-    vec measures(num_bs);
-
-    for (i = 0; i < num_bs; i++) {
-        measures[i] = time_vec[i] * LIGHT_SPEED;
-        for (j = 0; j < 3; j++) {
-            bs_pos(i, j) = bs_vec[i].xyz[j];
-        }
-    }
-    multi.setup(method, bs_pos);
-
-    vec ms_pos;
-    ret = multi.get_pos(ms_pos, measures);
-    if (!ret) {
-        return -1;
-    }
-*/
-/*
-    ms->x = ms_pos.get(0);
-    ms->y = ms_pos.get(1);
-    ms->z = ms_pos.get(2);
-*/
-    jclass msClass = env->GetObjectClass(ms);
-    jfieldID fxField = env->GetFieldID(msClass, "x", "D");
-    jfieldID fyField = env->GetFieldID(msClass, "y", "D");
-    jfieldID fzField = env->GetFieldID(msClass, "z", "D");
-/*
-    env->SetDoubleField(ms, fxField, ms_pos.get(0));
-    env->SetDoubleField(ms, fyField, ms_pos.get(1));
-    env->SetDoubleField(ms, fzField, ms_pos.get(2));
-*/
-    env->SetDoubleField(ms, fxField, 1.0);
-    env->SetDoubleField(ms, fyField, 2.0);
-    env->SetDoubleField(ms, fzField, 3.0);
-/*
-    ms->x = 1.0;
-    ms->y = 2.0;
-    ms->z = 3.0;
-*/
-    return 0;
 }

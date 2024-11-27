@@ -1,0 +1,10 @@
+prefix=/usr/lib
+exec_prefix=${prefix}
+libdir=${exec_prefix}
+includedir=${prefix}/include
+
+Name: tdoa_chan
+Description: TDOA Channel Library
+Version: 1.0.0
+Libs: -L${libdir} -ltdoa_chan
+Cflags: -I${includedir}
